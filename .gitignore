@@ -1,0 +1,32 @@
+# Local data and per-client stores (never committed)
+data/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editor noise
+.idea/
+.vscode/
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Rust
+target/
+Cargo.lock
+
+# Secrets (never committed)
+.env
+*.pem
+*.key
+secrets/
