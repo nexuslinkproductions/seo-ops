@@ -9,8 +9,28 @@ by a separate build task per `docs/handoff/DEEPSEEK-BUILD-HANDOFF.md`.
 
 ## Current state
 
-- Phase: planning documentation complete; implementation not yet started.
+- Phase: MVP implemented (Python core + Rust ops-core); see
+  `docs/evidence/BUILD-VERIFICATION.md` for acceptance evidence.
 - Source of truth: the documents under `docs/`.
+
+## Running locally
+
+```bash
+python3 -m venv .venv && . .venv/bin/activate
+pip install -r requirements.txt
+python3 -m pytest
+python3 -m ops.cli --help
+```
+
+All client data stays under `data/` (gitignored). The dashboard binds to
+loopback only: `python3 -m ops.cli serve --port 8765`.
+
+## OpenSEO / DataForSEO imports
+
+The dashboard can consume sanitized local OpenSEO/DataForSEO result exports
+(JSON/CSV) per client: `python3 -m ops.cli openseo-import --client <id> --file <path>`.
+This boundary is credential-free; see
+`docs/openseo/OPERATOR-GUIDE.md` and `config/openseo.env.example`.
 
 ## Documentation map
 
@@ -28,6 +48,9 @@ by a separate build task per `docs/handoff/DEEPSEEK-BUILD-HANDOFF.md`.
 - `docs/ROADMAP.md` — MVP scope and phased roadmap.
 - `docs/ACCEPTANCE.md` — acceptance criteria.
 - `docs/handoff/DEEPSEEK-BUILD-HANDOFF.md` — self-contained build handoff.
+- `docs/openseo/OPERATOR-GUIDE.md` — OpenSEO import operator guide.
+- `docs/decisions/ADR-004-openseo-import-boundary.md` — OpenSEO boundary ADR.
+- `config/openseo.env.example` — credential variable template (no values).
 
 ## Repository rules
 

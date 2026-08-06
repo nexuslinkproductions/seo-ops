@@ -1,0 +1,12 @@
+[package]
+name = "ops-core"
+version = "0.1.0"
+edition = "2021"
+description = "seo-ops evidence integrity and CSV validation CLI (std-only)"
+
+[[bin]]
+name = "ops-core"
+path = "src/main.rs"
+
+[dependencies]
+

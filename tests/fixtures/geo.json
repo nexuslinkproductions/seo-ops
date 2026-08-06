@@ -1,0 +1,45 @@
+{
+  "captured_at": "2026-07-10T09:00:00Z",
+  "answers": [
+    {
+      "prompt_id": "p0",
+      "engine": "chatgpt",
+      "answer": "Pre-window answer.",
+      "client_cited": true,
+      "brand_mentioned": true,
+      "cited_sources": [{"url": "https://shop.example.com/", "position": 1}],
+      "captured_at": "2026-06-20T09:00:00Z"
+    },
+    {
+      "prompt_id": "p1",
+      "engine": "chatgpt",
+      "answer": "ChatGPT answer.",
+      "client_cited": true,
+      "brand_mentioned": true,
+      "cited_sources": [{"url": "https://shop.example.com/", "position": 1}],
+      "captured_at": "2026-07-10T09:00:00Z"
+    },
+    {
+      "prompt_id": "p2",
+      "engine": "perplexity",
+      "answer": "Perplexity answer.",
+      "client_cited": false,
+      "brand_mentioned": true,
+      "cited_sources": [{"url": "https://other.example/", "position": 1}],
+      "captured_at": "2026-07-10T09:05:00Z"
+    },
+    {
+      "prompt_id": "p3",
+      "engine": "gemini",
+      "answer": "Gemini answer.",
+      "client_cited": true,
+      "brand_mentioned": false,
+      "cited_sources": [
+        {"url": "https://shop.example.com/", "position": 2},
+        {"url": "https://other.example/", "position": 1}
+      ],
+      "captured_at": "2026-07-10T09:10:00Z"
+    }
+  ]
+}
+

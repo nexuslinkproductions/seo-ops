@@ -1,0 +1,5 @@
+Address,Status Code,Indexability,Indexability Status,Canonical Link Element 1,Title 1
+https://shop.example.com/,200,Indexable,Indexable,https://shop.example.com/,Home
+https://shop.example.com/artikel/kydex-holster/,200,Indexable,Indexable,https://shop.example.com/artikel/kydex-holster/,Kydex Holster
+https://shop.example.com/404-test/,404,Non-Indexable,Not indexable due to error,,
+

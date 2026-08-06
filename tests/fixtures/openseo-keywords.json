@@ -1,0 +1,49 @@
+{
+  "tasks": [
+    {
+      "id": "1111-2222-3333",
+      "result": [
+        {
+          "key": "kydex holster",
+          "keyword_data": {
+            "keyword": "kydex holster",
+            "keyword_info": {
+              "search_volume": 1200,
+              "cpc": 1.5,
+              "competition": 0.6
+            },
+            "keyword_properties": {
+              "keyword_difficulty": 45
+            }
+          },
+          "serp_item": {
+            "rank_absolute": 3,
+            "url": "https://shop.example.com/artikel/kydex-holster/",
+            "domain": "shop.example.com"
+          },
+          "last_updated_time": "2026-07-15 08:00:00 +00:00"
+        },
+        {
+          "key": "owb holster kaufen",
+          "keyword_data": {
+            "keyword": "owb holster kaufen",
+            "keyword_info": {
+              "search_volume": 900,
+              "cpc": 0.9,
+              "competition": 0.3
+            },
+            "keyword_properties": {
+              "keyword_difficulty": 30
+            }
+          },
+          "serp_item": {
+            "rank_absolute": 14,
+            "url": "https://shop.example.com/product-category/owb-holster/",
+            "domain": "shop.example.com"
+          },
+          "last_updated_time": "2026-07-15 08:00:00 +00:00"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[project]
+name = "seo-ops"
+version = "0.1.0"
+description = "Client-isolated SEO/AEO/GEO operations dashboard MVP"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.7",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
